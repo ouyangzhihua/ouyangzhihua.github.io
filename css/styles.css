@@ -1,0 +1,54 @@
+/* 首页顶部设置 */
+.hptop{
+	width: 100%;	/* 设置宽度 */
+	height: 300px;	/* 设置高度 */
+	background-color: rgb(57,86,146);	/* 设置背景颜色 */
+	padding-top: 1px;
+}
+
+/* 清除默认样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* 设置ul */
+.navigation{
+	list-style: none;  /* 去除项目符号 */
+	/* width: 25%; */  	/*设置导航条宽度*/
+	/* margin: 0 ;
+	padding: 10px;
+	overflow: hidden; */
+}
+
+/* 设置li浮动 */
+.navigation li{
+	float: right;
+	/* width: 33%; */
+}
+
+/* 设置链接 */
+.navigation a{
+	display: block;	/* 将a转换为块元素 */
+	width: 20%;
+	text-align: center;	/*链接字体在每一块中居中*/
+	padding: 20px;
+	text-decoration: none;	/*去除链接下划线*/
+	color: white;	/*设置字体颜色*/
+	font-weight: bold;	/*设置字体加粗*/
+}
+
+/*设置鼠标移入效果*/
+.navigation a:hover{
+	color: rgb(215,221,233);
+}
+
+/*设置主页标题*/
+.title{
+	color: white;
+	font-size: larger;
+	margin: 150px 45% 150px;
+	
+	
+	
+}
