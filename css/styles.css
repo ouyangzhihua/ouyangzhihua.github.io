@@ -30,10 +30,8 @@
 /* 设置链接 */
 .navigation a{
 	display: block;	/* 将a转换为块元素 */
-	width: 20%;
 	width: 50%;
 	text-align: center;	/*链接字体在每一块中居中*/
-	padding: 20px;
 	padding: 30px;
 	text-decoration: none;	/*去除链接下划线*/
 	color: white;	/*设置字体颜色*/
@@ -48,13 +46,9 @@
 /*设置主页标题*/
 .title{
 	color: white;
-	font-size: larger;
 	font-size: 30px;
 	margin: 150px 45% 150px;
-	
-	
-	
-}		
+		
 }
 
 .birth{
