@@ -23,15 +23,8 @@
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 	<!-- 使用MAthjax渲染，显示latex格式的公式 -->
-	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-	<script type="text/x-mathjax-config">
-	    MathJax.Hub.Config({
-	        tex2jax: {
-	        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-	        inlineMath: [['$','$']]
-	        }
-	    });
-	</script>   
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
