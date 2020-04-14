@@ -11,11 +11,9 @@ categories: visual servoing
 
 ## 视觉伺服的基本组成
 一般性的视觉伺服误差定义为：
-$$
-\begin{equation}
+$$\begin{equation}
 e(x)=s(m(t),a)-s^{*} \label{1}
-\end equation
-$$
+\end{equation}$$
 其中$s$为视觉特征，$m(t)$为特征点的图像坐标，$a$为相机内部参数或3D模型。  
 
 视觉伺服控制方法的区别都在于对$s$的设计，一旦$S$确定，控制方法就很容易得到了。最简单直接的方法就是直接设计一个速度控制器。记相机的空间速度为：$v=(v_{c},\omega_{c})$,则有：

@@ -23,8 +23,19 @@
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 	<!-- 使用MAthjax渲染，显示latex格式的公式 -->
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<link rel="dns-prefetch" href="//cdn.bootcss.com" />   //加一个dns-prefetch用于网页加速
+	<link rel="dns-prefetch" href="//cdn.mathjax.org" />
+	<script type="text/x-mathjax-config">
+	    MathJax.Hub.Config({
+	        tex2jax: {
+	        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],	
+	        inlineMath: [ ['$','$'], ["\\(","\\)"] ], //行内公式选择符
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ], //段内公式选择符
+	        }
+	    });
+	</script>  
+	<script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js"></script>
+	
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
