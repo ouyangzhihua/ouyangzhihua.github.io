@@ -5,7 +5,7 @@
  */
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden;		//裁剪 div 元素中内容的左/右边缘 - 如果溢出元素的内容区域的话,裁剪内容 - 不提供滚动机制
 }
 
 p {
@@ -16,13 +16,18 @@ p.small {
     font-size: 16px;
 }
 
-a,
+a,					
 a:hover,
 a:focus,
 a:active,
 a.active {
     outline: 0;
     color: #{{ site.color.primary }};
+}
+
+.post-preview{
+	height: 800px;
+	
 }
 
 h1,
