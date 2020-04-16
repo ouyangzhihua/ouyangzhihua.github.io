@@ -3,7 +3,7 @@
 	<!-- 告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" initial-scale=1, shrink-tofit=no">
     <meta name="description" content="{{ site.description }}">
     <meta name="keywords" content="{{ site.keywords }}" />
     {% if site.meta_author %}<meta name="author" content="{{ site.meta_author }}">{% endif %}
@@ -25,6 +25,7 @@
 	<!-- 使用MAthjax渲染，显示latex格式的公式 -->
 	<link rel="dns-prefetch" href="//cdn.bootcss.com" />   <!-- 加一个dns-prefetch用于网页加速 -->
 	<link rel="dns-prefetch" href="//cdn.mathjax.org" />
+	<script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js"></script>
 	<script type="text/x-mathjax-config">
 	    MathJax.Hub.Config({
 	        tex2jax: {
@@ -34,7 +35,7 @@
 	        }
 	    });
 	</script>  
-	<script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js"></script>
+	
 	
 	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
