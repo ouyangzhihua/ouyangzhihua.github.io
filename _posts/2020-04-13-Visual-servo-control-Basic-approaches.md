@@ -3,8 +3,9 @@ layout: post
 title: '视觉伺服控制的基础方法'
 modal-id: 1
 date: 2020-04-13
+img: safe.png
 project-date: April 2020
-client: Start Bootstrap
+client: OYZH
 category: visual servoing 
 ---
 
