@@ -18,7 +18,9 @@
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
 							{% endif %}
-							<iframe src="_posts/vs.pdf"></iframe>
+							<div class="postcontent">
+								<p>{{ content }}</p>
+							</div>
                             <ul class="list-inline item-details">
                                 {% if post.client %}
                                     <li>Client:

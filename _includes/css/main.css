@@ -453,3 +453,8 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.postcontent {
+	text-align:left;
+	text-indent:2em;
+}
