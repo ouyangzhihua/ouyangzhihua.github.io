@@ -17,7 +17,7 @@ category: visual servoing
 一般性的视觉伺服误差定义为：
 
 $$\begin{equation}
-e(x)=s(m(t),a)-s^{*} \label{1}
+	e(x)=s(m(t),a)-s^{*} \label{1}
 \end{equation}$$
 
 其中$s$为视觉特征，$m(t)$为特征点的图像坐标，$a$为相机内部参数或3D模型。  
@@ -25,29 +25,29 @@ e(x)=s(m(t),a)-s^{*} \label{1}
 视觉伺服控制方法的区别都在于对$s$的设计，一旦$S$确定，控制方法就很容易得到了。最简单直接的方法就是直接设计一个速度控制器。记相机的空间速度为：$v=(v_{c},\omega_{c})$,则有：
 
 $$\begin{equation}
-\dot{s}=L_{s}v \label{2}
+	\dot{s}=L_{s}v \label{2}
 \end{equation}$$
 
-其中$L_{s}$为交互矩阵或特征雅可比矩阵。由$\eqref{1}$和$\eqref(2)$可以得到相机速度和误差之间的关系:
+其中$L_{s}$为交互矩阵或特征雅可比矩阵。由上式可以得到相机速度和误差之间的关系:
 
 $$\begin{equation}
-\dot{e}=L_{e}v \label{3}
+	dot{e}=L_{e}v \label{3}
 \end{equation}$$
 
 其中$L_{s}=L_{e}$。
 
 
-###控制部分
+### 控制部分
 假设我们希望误差$e$能够以指数形式减小即：
 
 $$\begin{equation}
-\dot{e}=\lambda e \label{4}
+	\dot{e}=\lambda e \label{4}
 \end{equation}$$
 
 可得：
 
 $$\begin{equation}
-v_{c}=-\lambdaL_{e}^{+} \label{5}
+	v_{c}=-\lambda L_{e}^{+} \label{5}
 \end{equation}$$
 
 由上式可以得到相机速度和误差之间的关系:
@@ -58,7 +58,7 @@ $$\begin{equation}
 
 其中$L_{s}=L_{e}$。
 
-####控制律
+#### 控制律
 假设我们希望误差$e$能够以指数形式减小即：
 
 $$\begin{equation}
@@ -68,7 +68,7 @@ $$\begin{equation}
 可得：
 
 $$\begin{equation}
-v_{c}=-\lambda L_{e}^{+} 
+   v_{c}=-\lambda L_{e}^{+} 
 \end{equation}$$
 
 其中$L_{e}^{+}$是$L_{e}$的广义逆矩阵或伪逆。$L_{e}^{+}$或$L_{e}$一般无法直接得到因此须设计逼近器估计$L_{e}^{+}$，记为$\hat{L_{e}^{+}}$。
@@ -78,7 +78,7 @@ $$\begin{equation}
 	v_{c}=-\lambda \hat{L_{e}^{+}}
 \end{equation}$$
 
-####交互矩阵估计器
+#### 交互矩阵估计器
 有三种常见的估计器形式：
 
 $$\begin{align}
@@ -132,12 +132,11 @@ ylabel('相机速度');
 legend('v_{x}', 'v_{y}', 'v_{z}','\omega_{x}', '\omega_{y}', '\omega_{z}');      %添加图例,使用tex格式显示公式
 ```
 分别对前面三种不同的交互矩阵估计器进行仿真：
-![相机轨迹](/img/post_img/ibvs_model.png)
-![相机轨迹](/img/post_img/row1_ibvs.eps)
+<img src="/img/post_img/ibvs_model.png" alt="模型" width="inherit"  />
 
 pose estimation模块：对相机的位姿进行估计
 
-control law模块：速度控制器,表达式为\eqref{vc}和\eqref{wc}
+control law模块：速度控制器,表达式为：
 
 $$\begin{align}
 v_{c} &= -\lambda ((^{c^{*}}t_{o} - ^{c}t_{o}) + [^{c}t_{o}]_{\times} \theta u) \label{vc} \\
