@@ -31,7 +31,7 @@ $$\begin{equation}
 其中$L_{s}$为交互矩阵或特征雅可比矩阵。由上式可以得到相机速度和误差之间的关系:
 
 $$\begin{equation}
-	dot{e}=L_{e}v \label{3}
+	\dot{e}=L_{e}v \label{3}
 \end{equation}$$
 
 其中$L_{s}=L_{e}$。
@@ -132,7 +132,7 @@ ylabel('相机速度');
 legend('v_{x}', 'v_{y}', 'v_{z}','\omega_{x}', '\omega_{y}', '\omega_{z}');      %添加图例,使用tex格式显示公式
 ```
 分别对前面三种不同的交互矩阵估计器进行仿真：
-<img src="/img/post_img/ibvs_model.png" alt="模型" width="inherit"  />
+<img src="/img/post_img/ibvs_model.png" alt="模型" width="50%" height="50%" />
 
 pose estimation模块：对相机的位姿进行估计
 
