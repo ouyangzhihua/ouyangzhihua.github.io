@@ -132,7 +132,7 @@ ylabel('相机速度');
 legend('v_{x}', 'v_{y}', 'v_{z}','\omega_{x}', '\omega_{y}', '\omega_{z}');      %添加图例,使用tex格式显示公式
 ```
 分别对前面三种不同的交互矩阵估计器进行仿真：
-<img src="/img/post_img/ibvs_model.png" alt="模型" width="50%" height="50%" />
+<img src="/img/post_img/ibvs_model.png" alt="模型" width="100%" height="100%" />
 
 pose estimation模块：对相机的位姿进行估计
 
