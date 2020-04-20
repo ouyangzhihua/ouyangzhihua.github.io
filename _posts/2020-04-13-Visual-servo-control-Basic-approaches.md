@@ -1,11 +1,10 @@
 ---
-layout: post
-title: '视觉伺服控制的基础方法'
+layout: default
+title: '视觉伺服控制的基础方法笔记'
 modal-id: 1
 date: 2020-04-13
 img: safe.png
-project-date: April 2020
-client: OYZH
+author: OYZH
 category: visual servoing 
 ---
 
