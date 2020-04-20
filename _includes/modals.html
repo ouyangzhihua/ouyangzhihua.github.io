@@ -17,8 +17,8 @@
                             <!--	<img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">	-->
                             <ul class="list-inline item-details">
                                 {% if post.date %}
-                                    <li>Date<span class="icon icon-calendar">:
-                                        <strong><a href="https://ouyangzhihua.github.io/"></span><time datetime="{{page.date | date_to_xmlschema}}">{{page.date | date: '%Y 年 %m 月 %d 日'}}</time></a>
+                                    <li>Date<span class="icon icon-calendar"></span>:
+                                        <strong><a href="https://ouyangzhihua.github.io/"><time datetime="{{page.date | date_to_xmlschema}}">{{page.date | date: '%Y 年 %m 月 %d 日'}}</time></a>
                                         </strong>
                                     </li>
                                 {% endif %}
