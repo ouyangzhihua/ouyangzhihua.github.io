@@ -1,0 +1,22 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+html {
+  @apply leading-normal overflow-y-scroll bg-gray-50 text-gray-800 font-base;
+  font-variant-ligatures: normal;
+}
+
+html.dark {
+  @apply bg-dark-500 text-light-800;
+}
+
+body {
+  @apply m-0;
+}
+
+*::-webkit-scrollbar {
+  @apply w-2;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-light-800 dark:bg-dark-100;
+}
