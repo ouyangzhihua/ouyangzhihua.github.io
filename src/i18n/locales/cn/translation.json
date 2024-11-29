@@ -1,0 +1,21 @@
+{
+  "tab": {
+    "posts": "文章",
+    "snippets": "代码片段",
+    "projects": "项目"
+  },
+  "intro": {
+    "title": "👋 oyzh",
+    "description": "学习搭建自己的博客平台",
+    "link": "开始阅读"
+  },
+  "dateFormat": "yyyy / MM / dd",
+  "comment": {
+    "title": "评论",
+    "btn": "评论",
+    "owner": "作者"
+  },
+  "projects": {
+    "title": "项目"
+  }
+}

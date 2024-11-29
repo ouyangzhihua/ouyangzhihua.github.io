@@ -1,0 +1,21 @@
+{
+  "tab": {
+    "posts": "Posts",
+    "snippets": "Snippets",
+    "projects": "Projects"
+  },
+  "intro": {
+    "title": "👋 oyzh",
+    "description": "this is a blog site",
+    "link": "Take a Look"
+  },
+  "dateFormat": "MMM dd, yyyy",
+  "comment": {
+    "title": "Comments",
+    "btn": "Click to Comment",
+    "owner": "Author"
+  },
+  "projects": {
+    "title": "Projects"
+  }
+}
