@@ -160,7 +160,7 @@ class Github {
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
         Accept: 'application/vnd.github.v3+json',
-        Authorization: `token ${this.token}`,
+        Authorization: `Bearer ${this.token}`,
       },
       body: body ? JSON.stringify(body) : undefined,
     });
@@ -211,7 +211,7 @@ class Github {
 }
 
 export default new Github(
-  import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART1 + import.meta.env.VITE_GITHUB_ACCESS_TOKEN_PART2,
+  import.meta.env.VITE_GITHUB_ACCESS_TOKEN,
   import.meta.env.VITE_GITHUB_OWNER,
   import.meta.env.VITE_GITHUB_REPO,
 );
