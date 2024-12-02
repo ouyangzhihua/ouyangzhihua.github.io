@@ -22,7 +22,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  read_secrets:
+  read_secrets: 
+    runs-on: ubuntu-latest
     steps:
       - name: Create .env file
         run: echo "${{ secrets.ENV_FILE }}" > .env
